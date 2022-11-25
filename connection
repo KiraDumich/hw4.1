@@ -1,0 +1,33 @@
+select * from netflix
+
+
+select * from netflix where title='title'
+order by date_added desc
+limit 1
+
+
+
+select * from netflix
+where release_year between 2020 and 2021
+order by release_year desc
+
+
+
+select * from netflix
+where rating in ("G")
+
+
+
+select * from netflix
+where listed_in like '%Crime%'
+
+
+
+select * from netflix
+where "cast" like '%Ben Lamb%' and cast like '%Rose McIver%'
+
+
+select * from netflix
+where type = 'TV Show'
+and release_year = '2021'
+and listed like '%TV%'
